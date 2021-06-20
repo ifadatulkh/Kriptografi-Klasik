@@ -345,11 +345,11 @@ a^-1 : invers perkalian modular dari modulo m, yaitu memenuhi persamaan
 
     m = 26, a = 7, b = 9 
 
-    |   Plainteks     | K  | D  | Y  | D  | X  |
+    |   Chiperteks     | K  | D  | Y  | D  | X  |
     |-----------------|----|----|----|----|----|
     |        x        | 17 | 10 | 5  | 10 | 12 |
     | a^-1(x-b) mod m | 16 | 15 | 18 | 15 | 19 |
-    |   Chiperteks    | P  | O  | R  | O  | S  |
+    |   Plainteks    | P  | O  | R  | O  | S  |
 
     maka, kata `KDYDF` apabila di-deskripsi akan menjadi `POROS`. 
 
