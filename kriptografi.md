@@ -162,6 +162,7 @@ cipher). Teknik ini dipublikasikan oleh diplomat Perancis, Blaise de Vigènere p
 - **Encrypt**
 
     Contoh Vigenère square untuk melakukan enkripsi:
+    
     ![ilustrasi](https://pages.mtu.edu/~shene/NSF-4/Tutorial/VIG/FIG-VIG-Table.jpg)
 
     ```
