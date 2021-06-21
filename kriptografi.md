@@ -162,7 +162,6 @@ cipher). Teknik ini dipublikasikan oleh diplomat Perancis, Blaise de Vigènere p
 - **Encrypt**
 
     Contoh Vigenère square untuk melakukan enkripsi:
-    
     ![ilustrasi](https://pages.mtu.edu/~shene/NSF-4/Tutorial/VIG/FIG-VIG-Table.jpg)
 
     ```
@@ -189,6 +188,14 @@ E = (P + K) mod 26
 Dekripsi 
 D = (E - K + 26) mod 26 
 ```
+
+#### **Kasiski Test**
+
+Langkah-langkah metode Kasiski:
+1. Temukan semua kriptogram yang berulang di dalam cipherteks (pesan yang panjang biasanya mengandung kriptogram yang berulang).
+2. Hitung jarak antara kriptogram yang berulang
+3. Hitung semua faktor (pembagi) dari jarak tersebut (faktor pembagi menyatakan panjang kunci yang mungkin ).
+4. Tentukan irisan dari himpunan faktor pembagi tersebut. Nilai yang muncul di dalam irisan menyatakan angka yang muncul pada semua faktor pembagi dari jarak-jarak tersebut . Nilai tersebut mungkin adalah panjang kunci.
 
 Berikut ini adalah implementasi Vigenère Chiper dalam source code python:
 ```py
@@ -345,11 +352,11 @@ a^-1 : invers perkalian modular dari modulo m, yaitu memenuhi persamaan
 
     m = 26, a = 7, b = 9 
 
-    |   Chiperteks     | K  | D  | Y  | D  | X  |
+    |   Plainteks     | K  | D  | Y  | D  | X  |
     |-----------------|----|----|----|----|----|
     |        x        | 17 | 10 | 5  | 10 | 12 |
     | a^-1(x-b) mod m | 16 | 15 | 18 | 15 | 19 |
-    |   Plainteks    | P  | O  | R  | O  | S  |
+    |   Chiperteks    | P  | O  | R  | O  | S  |
 
     maka, kata `KDYDF` apabila di-deskripsi akan menjadi `POROS`. 
 
